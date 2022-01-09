@@ -4,8 +4,14 @@ services:
   apache2:
     image: repulsesubversion
     container_name: apache2
-    ports:
+    ports: 
     - "80:80"
     - "443:443"
     volumes:
     - ./svn:/var/lib/svn
+  #caddy:
+    #image: custom-caddy
+    #container_name: caddy
+    #ports: 
+    #- "80:80"
+    #- "443:443"
