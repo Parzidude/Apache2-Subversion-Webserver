@@ -11,6 +11,3 @@ A simple docker image which sets up a apache2 webserver running subversion and l
 `sh SetupScript.sh`
 
 3. Finally run `docker compose up` to bring up the needed cointainers and volumes.
-
-### Disclaimer
-The Container images are still not up in the docker hub. If you see this disclaimer that means you need to build the images from the "SubversionApache2" and "Caddy" folders.
