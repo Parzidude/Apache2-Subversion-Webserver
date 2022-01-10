@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   apache2:
-    image: parzidude/repulse-svn:1.0.0
+    image: parzidude/repulse-svn:1.0.1
     container_name: apache-svn
     ports: 
     - "80:80"
