@@ -1,4 +1,4 @@
-https://repulse-svn.com
+https://svn.repulse.com
 {
     reverse_proxy apache-svn:443
 }
