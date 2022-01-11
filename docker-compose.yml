@@ -4,22 +4,25 @@ services:
   apache2:
     image: parzidude/repulse-svn:1.0.1
     container_name: apache-svn
-    ports: 
-    - "80:80"
-    - "443:443"
+    #ports: 
+    #- "80:80"
+    #- "443:443"
     volumes:
     - svn:/var/lib/svn
     networks:
       localnet:
-  #caddy:
-    #image: parzidude/repulse-caddy:1.0.0
-    #container_name: caddy
-    #ports: 
-    #- "80:80"
-    #- "443:443"
-
+  caddy:
+    image: parzidude/repulse-caddy:1.0.1
+    container_name: caddy
+    ports: 
+    - "80:80"
+    - "443:443"
+    networks:
+      localnet:
+      localnet2:
 volumes:
   svn: {}
 
 networks:
   localnet:
+  localnet2:

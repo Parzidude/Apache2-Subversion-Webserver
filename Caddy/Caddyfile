@@ -1,5 +1,4 @@
-localhost 
+https://repulse-svn.com
 {
-    respond "Hello world"
+    reverse_proxy apache-svn:443
 }
-
