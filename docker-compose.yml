@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   apache2:
-    image: parzidude/repulse-svn:1.0.1
+    image: repulse1/svn-apache2:1.0.1
     container_name: apache-svn
     #ports: 
     #- "80:80"
@@ -12,7 +12,7 @@ services:
     networks:
       localnet:
   caddy:
-    image: parzidude/repulse-caddy:1.0.2
+    image: repulse1/svn-caddy:1.0.2
     container_name: caddy
     ports: 
     - "80:80"
